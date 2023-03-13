@@ -77,3 +77,43 @@ select:focus {
 .hotel-icons p {
   font-size: 14px;
 }
+
+.navbar-toggler {
+  border: unset !important;
+}
+button:focus {
+  outline: unset !important;
+  box-shadow: unset !important;
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  li.nav-item.ms-4 {
+    margin-left: 5px !important;
+    margin-top: 10px;
+    margin-right: 5px !important;
+  }
+  .topbar .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .topbar p:first-child {
+    margin-bottom: 10px !important;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .reservation .col-md-6,
+  .reservation .col-md-3 {
+    padding: 25px !important;
+  }
+}
