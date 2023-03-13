@@ -1,0 +1,79 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+img.img-fluid.logo {
+  width: 100px;
+  border-radius: 20px 5px;
+}
+.nav-link.active,
+.nav-link:hover {
+  border-bottom: 2px solid black;
+}
+.nav-link {
+  border-bottom: 2px solid transparent;
+}
+
+/* hero */
+.hero {
+  padding-top: 400px;
+  background: url("../img/hero.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.bg-orange {
+  background-color: #e4a00e;
+}
+.btn-orange {
+  background-color: #e4a00e;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: unset !important;
+}
+
+.availability input {
+  font-size: 20px;
+}
+.availability.mt-4 {
+  position: relative;
+  top: 50px !important;
+  margin-top: 0px !important;
+  margin-bottom: 100px !important;
+}
+.ls-3 {
+  letter-spacing: 5px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.6s;
+  transform: translateY(100%);
+}
+.img-holder:hover .info {
+  transform: translateY(0%);
+}
+
+.hotel-icons p {
+  font-size: 14px;
+}
